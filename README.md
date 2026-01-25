@@ -25,3 +25,9 @@ This is my **private portfolio website**, built with **TanStack Start**, showcas
 npm install
 npm run dev
 ```
+
+## Helping commands
+
+`bash
+find . -name "*.png" -exec magick {} -resize 1200x\> -quality 85 {}.webp \;
+`

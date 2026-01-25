@@ -160,4 +160,31 @@ export const PROJECTS: Project[] = [
       "Liquibase"
     ]
   },
+  {
+    name: "English Learning Platform",
+    industry: "EdTech",
+    role: "Senior Webdeveloper",
+    time: "2025",
+    images: [
+      "projects/englishlearning/laptop.webp",
+      "projects/englishlearning/phone.webp",
+      "projects/englishlearning/call.webp"
+    ],
+    description: "English learning platform designed for the Japanese market, combining AI-generated learning content with human review to ensure high quality and cultural accuracy. The platform delivers personalized lessons, practice scenarios, and feedback tailored to Japanese learners, balancing automation with expert validation for reliable and effective language acquisition.",
+    responsibilities: [
+      "Design and implement systems for generating English learning content using AI models, aligned with pedagogical goals",
+      "Integrate human-in-the-loop review workflows to validate, curate, and improve AI-generated lessons and exercises",
+      "Build tooling and pipelines to evaluate, version, and continuously improve generated content",
+      "Optimize content generation for scalability, performance, and cost efficiency",
+      "Investigate, diagnose, and fix bugs in an existing production platform, ensuring stability, performance, and a high-quality user experience."
+    ],
+    technologies: [
+      "OpenAI",
+      "Node.js",
+      "Nest.js",
+      "React",
+      "Image Generation",
+      "Audio Generation"
+    ]
+  }
 ];

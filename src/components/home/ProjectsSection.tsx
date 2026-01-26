@@ -1,5 +1,9 @@
-import { Project, PROJECTS } from './projects'
+import { TimerIcon } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { Badge } from '../ui/badge'
+import { Button } from '../ui/button'
 import { Card } from '../ui/card'
+import { Carousel } from '../ui/carousel'
 import {
   Drawer,
   DrawerClose,
@@ -9,14 +13,13 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from '../ui/drawer'
-import { Button } from '../ui/button'
-import { useEffect, useState } from 'react'
-import { Badge } from '../ui/badge'
-import { Carousel } from '../ui/carousel'
-import { Link } from '@tanstack/react-router'
-import { TimerIcon } from 'lucide-react'
+import { Project, PROJECTS } from './projects'
+
+const PROJECT_SIZE = 6
 
 export function ProjectsSection() {
+  const [projects, setProjects] = useState(PROJECTS.slice(0, PROJECT_SIZE))
+
   return (
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted">
       <div className="max-w-7xl mx-auto">
@@ -27,12 +30,36 @@ export function ProjectsSection() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {PROJECTS.map((project) => (
+          {projects.map((project) => (
             <ProjectCard key={project.name} project={project} />
           ))}
         </div>
+        {projects.length === PROJECT_SIZE && (
+          <div className="flex justify-center items-center pt-10">
+            <Button
+              onClick={() => {
+                setProjects(PROJECTS)
+              }}
+            >
+              Show all Projects ({PROJECTS.length})
+            </Button>
+          </div>
+        )}
       </div>
     </section>
+  )
+}
+
+function CardImage({ src, alt }: { src: string; alt: string }) {
+  return (
+    <div className="relative w-full aspect-video">
+      <img
+        src={src}
+        alt={alt}
+        className="absolute inset-0 w-full h-full object-cover"
+        loading="lazy"
+      />
+    </div>
   )
 }
 
@@ -50,14 +77,7 @@ function ProjectCard({ project }: { project: Project }) {
       key={project.name}
       className="grid grid-rows-subgrid gap-2 row-span-4 overflow-hidden py-0 shadow"
     >
-      <div className="relative w-full aspect-video">
-        <img
-          src={`/${project.images[0]}`}
-          alt={project.name}
-          className="absolute inset-0 w-full h-full object-cover"
-          loading="lazy"
-        />
-      </div>
+      <CardImage src={`/${project.images[0]}`} alt={project.name} />
       <div className="p-2">
         <span className="truncate text-lg font-bold text-foreground">
           {project.name}

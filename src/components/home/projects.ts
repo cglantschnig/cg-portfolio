@@ -101,33 +101,6 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    name: "Online Casino Games",
-    industry: "Gambling",
-    time: "2014 - 2016",
-    role: "Frontend Developer",
-    description: "A collection of mobile-first slot machine and poker games designed for smooth gameplay on smartphones. The games feature touch-optimized controls, fast animations, and responsive layouts, delivering an engaging casino experience with reliable performance across iOS and Android devices.",
-    images: [
-      "projects/lottery/poker01.webp",
-      "projects/lottery/slot01.webp",
-      "projects/lottery/slot02.webp",
-    ],
-    technologies: [
-      "Javascript",
-      "CSS",
-      "Advanced CSS/JS Animations",
-      "Mobile Optimization",
-      "GSAP"
-    ],
-    responsibilities: [
-      "Develop and maintain responsive, high-performance game interfaces optimized for mobile browsers and devices",
-      "Implement interactive UI components, animations, and game flows with a strong focus on touch interactions",
-      "Ensure smooth performance across a wide range of screen sizes, devices, and network conditions",
-      "Collaborate closely with game designers and backend engineers to integrate gameplay logic and real-time data",
-      "Optimize rendering, asset loading, and state management to minimize latency and battery usage",
-      "Test, debug, and continuously improve usability, accessibility, and visual consistency across platforms"
-    ]
-  },
-  {
     name: "POS for Recycling Stations",
     industry: "GreenTech",
     time: "2022 - 2023",
@@ -186,5 +159,89 @@ export const PROJECTS: Project[] = [
       "Image Generation",
       "Audio Generation"
     ]
-  }
+  },
+  {
+    name: "Online Casino Games",
+    industry: "Gambling",
+    time: "2014 - 2016",
+    role: "Frontend Developer",
+    description: "A collection of mobile-first slot machine and poker games designed for smooth gameplay on smartphones. The games feature touch-optimized controls, fast animations, and responsive layouts, delivering an engaging casino experience with reliable performance across iOS and Android devices.",
+    images: [
+      "projects/lottery/poker01.webp",
+      "projects/lottery/slot01.webp",
+      "projects/lottery/slot02.webp",
+    ],
+    technologies: [
+      "Javascript",
+      "CSS",
+      "Advanced CSS/JS Animations",
+      "Mobile Optimization",
+      "GSAP"
+    ],
+    responsibilities: [
+      "Develop and maintain responsive, high-performance game interfaces optimized for mobile browsers and devices",
+      "Implement interactive UI components, animations, and game flows with a strong focus on touch interactions",
+      "Ensure smooth performance across a wide range of screen sizes, devices, and network conditions",
+      "Collaborate closely with game designers and backend engineers to integrate gameplay logic and real-time data",
+      "Optimize rendering, asset loading, and state management to minimize latency and battery usage",
+      "Test, debug, and continuously improve usability, accessibility, and visual consistency across platforms"
+    ]
+  },
+  {
+    name: "Powerplant Monitoring System",
+    industry: "Industry 4.0",
+    time: "2018 - 2019",
+    role: "Full Stack Developer",
+    description: "Water Power Plant Monitoring Software provides real-time insight into hydroelectric operations, including water levels, flow rates, turbine output, and system health. Interactive dashboards, historical trends, and predictive projections help operators optimize energy production, maintain safe operating ranges, and respond quickly to changing conditions.",
+    images: [
+      "projects/powerplant/overview.webp",
+      "projects/powerplant/waterlevel.webp",
+      "projects/powerplant/powerplant.webp",
+    ],
+    technologies: [
+      "Spring Boot",
+      "Kafka",
+      "Angular",
+      "Real Time",
+      "Big Data",
+      "Test Driven Development",
+      "PostgreSQL"
+    ],
+    responsibilities: [
+      "Designed and implemented real-time monitoring dashboards for water levels, turbine output, and flow rates",
+      "Developed historical data analysis and projection features to support forecasting and decision-making",
+      "Implemented alerting and event tracking for threshold breaches and critical system states",
+      "Ensured system reliability, performance, and data accuracy in a mission-critical environment",
+      "Collaborated with domain experts and stakeholders to translate operational requirements into software solutions"
+    ]
+  },
+  {
+    name: "Portfolio Analyzer",
+    industry: "Fintech",
+    time: "2022",
+    role: "Senior Software Developer",
+    description: "A portfolio asset analyzer that gives you a clear, real-time view of your investments across stocks, commodities, crypto, and more. It tracks historical performance, risk, and allocation, helping you understand trends, spot imbalances, and make smarter, data-driven decisions from a single, clean dashboard.",
+    images: [
+      "projects/portfolioanalyzer/dashboard.webp",
+      "projects/portfolioanalyzer/commodities.webp",
+      "projects/portfolioanalyzer/stocks.webp",
+    ],
+    technologies: [
+      "Java",
+      "Kafka",
+      "Integration",
+      "Real Time",
+      "JavaFx",
+      "PostgreSQL"
+    ],
+    responsibilities: [
+      "Refactored and normalized existing data models to improve accuracy, consistency, and query performance",
+      "Ensured data integrity and backward compatibility during the transition from the old system",
+      "Optimized data processing pipelines for large volumes of time-series market data",
+      "Improved system reliability and maintainability by introducing clearer domain boundaries and modular services",
+      "Collaborated with frontend and product teams to align backend capabilities with new analytical features",
+      "Implemented monitoring, logging, and error handling to support the new production system",
+      "Reduced technical debt by removing obsolete components and simplifying complex legacy logic"
+    ]
+  },
 ];

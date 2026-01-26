@@ -157,7 +157,8 @@ export const PROJECTS: Project[] = [
       "Nest.js",
       "React",
       "Image Generation",
-      "Audio Generation"
+      "Audio Generation",
+      "MongoDb"
     ]
   },
   {
